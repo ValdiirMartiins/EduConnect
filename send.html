@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Arquivos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/icon.png" alt="Logo">
+            <a href="./index.html">Arquivos</a>
+            <a href="./send.html">Enviar Arquivos</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/xoqooyjq" method="POST">
+            <label for="fileName">Nome do Documento:</label>
+            <input type="text" id="fileName" name="fileName" required>
+
+            <label for="course">Selecione um Curso:</label>
+            <select id="course" name="course" required>
+                <option selected disabled>Selecione</option>
+                <option value="Administração">Administração</option>
+                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                <option value="Ciência Contabeis">Ciência Contabeis</option>
+                <option value="Gestão Comercial">Gestão Comercial</option>
+                <option value="Gestão de RH">Gestão de RH</option>
+                <option value="Gestão Financeira">Gestão Financeira</option>
+                <option value="Inteligência de Negócios">Inteligência de Negócios</option>
+                <option value="Logística">Logística</option>
+                <option value="Marketing Digital">Marketing Digital</option>
+            </select>
+
+            <label for="file">Arquivo:</label>
+            <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

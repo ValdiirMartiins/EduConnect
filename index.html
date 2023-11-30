@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnet</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/icon.png" alt="Logo">
+            <a href="./index.html">Arquivos</a>
+            <a href="./send.html">Enviar Arquivos</a>
+        </nav>
+    </header>
+    <main>
+        <div id="search">
+            <label for="searchInput">Procurar arquivos:</label>
+            <input type="text" id="searchInput" oninput="searchFiles()">
+            <p id="error-message">Nenhum arquivo encontrado.</p>
+        </div>
+
+        <div class="topic" onclick="toggleFileList('topic1')" id="topic1">Administração</div>
+        <ul class="file-list" id="topic1Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic2')" id="topic2">Análise e Desenvolvimento de Sistemas</div>
+        <ul class="file-list" id="topic2Files">
+            <li class="file-item" onclick="openFile('EduConnect (Projeto Aplicado Multiplataforma).pdf')"><a href="./example_archives/EduConnect (Projeto Aplicado Multiplataforma).pdf" download="EduConnect (Projeto Aplicado Multiplataforma).pdf">EduConnect (Projeto Aplicado Multiplataforma)</a></li>
+            <li class="file-item" onclick="openFile('HOTSPOT SHIELD (Segurança no Ciberespaço).pdf')"><a href="./example_archives/HOTSPOT SHIELD (Segurança no Ciberespaço).pdf" download="HOTSPOT SHIELD (Segurança no Ciberespaço).pdf">HOTSPOT SHIELD (Seegurança no Ciberespaço)</a></li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic3')" id="topic3">Ciência Contabeis</div>
+        <ul class="file-list" id="topic3Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic4')" id="topic4">Gestão Comercial</div>
+        <ul class="file-list" id="topic4Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic5')" id="topic5">Gestão de RH</div>
+        <ul class="file-list" id="topic5Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic6')" id="topic6">Gestão Financeira</div>
+        <ul class="file-list" id="topic6Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic7')" id="topic7">Inteligência de Negócios</div>
+        <ul class="file-list" id="topic7Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic8')" id="topic8">Logística</div>
+        <ul class="file-list" id="topic8Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+
+        <div class="topic" onclick="toggleFileList('topic9')" id="topic9">Marketinbg Digital</div>
+        <ul class="file-list" id="topic9Files">
+            <li class="file-item" onclick="openFile('file1')">Arquivo 1</li>
+            <li class="file-item" onclick="openFile('file2')">Arquivo 2</li>
+        </ul>
+    </main>
+</body>
+</html>
